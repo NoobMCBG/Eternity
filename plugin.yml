@@ -8,7 +8,7 @@ description: Plugin Eternity by NoobMCBG
 
 commands:
   eternity:
-    description: "Lệnh Để Mở Menu Kĩ Năng Eternity"
+    description: "Commands Opens Menu Eternity Skill"
     aliases:
     - etnt
 permissions:
