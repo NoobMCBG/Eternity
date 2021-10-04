@@ -1,11 +1,11 @@
-# Eternity
-- Plugin Eternity Skill for Pocketmine-MP
+# Eternity Ore
+- Plugin Eternity Ore Skill for Pocketmine-MP
 <br>
 
 # Commands:
 | **Commands**| **Description** | **Aliases** |
 | --- | --- | --- |
-| **/eternity** | **Commands Opens Menu Eternity Skill** | **etnt**|
+| **/eternity** | **Commands Opens Menu Eternity Ore Skill** | **etnt**|
 <br>
 
 # Permission:
