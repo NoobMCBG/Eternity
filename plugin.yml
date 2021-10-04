@@ -1,0 +1,16 @@
+name: Eternity
+version: 1.0.0
+api: 3.0.0
+main: NoobMCBG\Eternity\Main
+author: NoobMCBG
+github: https://github.com/NoobMCBG
+description: Plugin Eternity by NoobMCBG
+
+commands:
+  eternity:
+    description: "Lệnh Để Mở Menu Kĩ Năng Eternity"
+    aliases:
+    - etnt
+permissions:
+  eternity.command:
+    default: op
