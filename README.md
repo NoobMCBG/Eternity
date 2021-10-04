@@ -2,7 +2,7 @@
 - Plugin Eternity Skill for Pocketmine-MP
 <br>
 
-# Configs:
+# Commands:
 | **Commands**| **Description** | **Aliases** |
 | --- | --- | --- |
 | **/eternity** | **Commands Opens Menu Eternity Skill** | **etnt**|
