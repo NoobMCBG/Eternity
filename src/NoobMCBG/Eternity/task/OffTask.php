@@ -25,7 +25,7 @@ class OffTask extends Task{
                     $this->getPlugin()->cooldown->setAll($all);
                     $this->getPlugin()->config->set($player, 'off');
                     if($this->getPlugin()->getServer()->getPlayer($player) !== null){
-                        $this->getPlugin()->getServer()->getPlayer($player)->sendMessage("§l§e Kĩ Năng Eternity Của Bạn Đã Hết Thời Gian Sử Dụng");
+                        $this->getPlugin()->getServer()->getPlayer($player)->sendMessage("§cYour Eternity Skill Has Expired");
                     }
                     continue;
                 }
