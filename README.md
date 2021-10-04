@@ -9,7 +9,7 @@
 <br>
 
 # Permission:
-- Permission 'eternity.command' to use command /eternity
+- Permission `eternity.command` to use command /eternity
 <br>
 
 # Info Plugin:
