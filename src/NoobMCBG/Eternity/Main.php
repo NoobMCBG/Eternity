@@ -73,7 +73,7 @@ class Main extends PluginBase implements Listener {
     {
     $this->eternity->readonly();
     $this->eternity->setListener([$this, "GuiListener"]);
-    $this->eternity->setName("§l§9Menu Eternity");
+    $this->eternity->setName("§l§2Skill Eternity");
 	    $inventory = $this->eternity->getInventory();
 	    $inventory->setItem(0, Item::get(160, 14, 1)->setCustomName("---"));
 	    $inventory->setItem(1, Item::get(160, 14, 1)->setCustomName("---"));
@@ -86,11 +86,11 @@ class Main extends PluginBase implements Listener {
 	    $inventory->setItem(8, Item::get(160, 14, 1)->setCustomName("---"));
 	    $inventory->setItem(9, Item::get(160, 14, 1)->setCustomName("---"));
 	    $inventory->setItem(10, Item::get(160, 14, 1)->setCustomName("---"));
-	    $inventory->setItem(11, Item::get(35, 5, 1)->setCustomName("§l§aBẬT"));
+	    $inventory->setItem(11, Item::get(35, 5, 1)->setCustomName("§l§aOn"));
 	    $inventory->setItem(12, Item::get(160, 14, 1)->setCustomName("---"));
 	    $inventory->setItem(13, Item::get(160, 14, 1)->setCustomName("---"));
 	    $inventory->setItem(14, Item::get(160, 14, 1)->setCustomName("---"));
-	    $inventory->setItem(15, Item::get(35, 14, 1)->setCustomName("§l§cTẮT"));
+	    $inventory->setItem(15, Item::get(35, 14, 1)->setCustomName("§l§cOff"));
 	    $inventory->setItem(16, Item::get(160, 14, 1)->setCustomName("---"));
 	    $inventory->setItem(17, Item::get(160, 14, 1)->setCustomName("---"));
 	    $inventory->setItem(18, Item::get(160, 14, 1)->setCustomName("---"));
@@ -109,20 +109,20 @@ class Main extends PluginBase implements Listener {
           $player = $sender->getPlayer();
           $hand = $sender->getInventory()->getItemInHand()->getCustomName();
          $inventory = $this->eternity->getInventory();
-      if($item->getCustomName() === "§l§aBẬT"){
+      if($item->getCustomName() === "§l§aOn"){
         $sender->removeWindow($inventory);
-                    $sender->addTitle("§l§bEternity", "§l§aĐã Bật");
-                    $sender->sendMessage("§l§aBạn Đã Bật Kĩ Năng §bEternity");
+                    $sender->addTitle("§l§bEternity", "§l§aOn");
+                    $sender->sendMessage("§l§bEternity §aOn");
                     $this->config->set(strtolower($player->getName()), "on");
                     $this->config->save();
-                    $this->cooldown->set(strtolower($player->getName()), 60); //60 này là 60 Phút, sẽ bằng 1 tiếng
+                    $this->cooldown->set(strtolower($player->getName()), 60); //60 Min = 1 hours
                     $this->cooldown->save();
                     $sender->getLevel()->broadcastLevelSoundEvent($sender->add(0, $sender->eyeHeight, 0), LevelSoundEventPacket::SOUND_CHEST_CLOSED);
       }
-      if($item->getCustomName() === "§l§cTẮT"){
+      if($item->getCustomName() === "§l§cOff"){
         $sender->removeWindow($inventory);
-                    $sender->addTitle("§l§bEternity", "§l§cĐã Tắt");
-                    $sender->sendMessage("§l§cBạn Đã Tắt Kĩ Năng §bEternity");
+                    $sender->addTitle("§l§bEternity", "§l§cOff");
+                    $sender->sendMessage("§l§bEternity§c Off");
                     $this->config->set(strtolower($player->getName()), "off");
                     $this->config->save();
                     $all = $this->cooldown->getAll();
